@@ -1,32 +1,38 @@
 const WHEEL_RADIUS = 400;
-const TEXT_FONT_SIZE = 50;
+const TEXT_FONT_SIZE = 25;
 
 // Create new wheel object specifying the parameters at creation time.
 let theWheel = new Winwheel({
-    'numSegments': 13,     // Specify number of segments.
+    'numSegments': 19,     // Specify number of segments.
     'outerRadius': WHEEL_RADIUS,   // Set outer radius so wheel fits inside the background.
     'textFontSize': TEXT_FONT_SIZE,    // Set font size as desired.
     'segments':        // Define segments including colour and text.
         [
-            { fillStyle: '#eae56f', text: 'Akhil', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#89f26e', text: 'Andy', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#c100be', text: 'David', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#7de6ef', text: 'Davy', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#dc89f3', text: 'Jiebo', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#96af30', text: 'Jonathan', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#e7706f', text: 'Juan', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#e7706f', text: 'Leo', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#89f26e', text: 'Marcos', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#a128d8', text: 'Minh', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#d1b738', text: 'Nick', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#785ec4', text: 'Shirley', id: Math.floor(Math.random() * Date.now()) },
-            { fillStyle: '#96af30', text: 'Tyler', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#eae56f', text: 'bright-tangy-furniture', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#89f26e', text: 'petite-thundering-army', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#c100be', text: 'blue-acoustic-boy', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#7de6ef', text: 'brown-calm-zoo', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#dc89f3', text: 'drab-mushy-bed', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#96af30', text: 'defeated-dazzling-holiday', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#e7706f', text: 'small-shallow-eye', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#e7706f', text: 'proud-nice-spoon', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#89f26e', text: 'thousands-wide-memory', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#a128d8', text: 'acceptable-some-adult', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#d1b738', text: 'broken-incalculable-wire', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#785ec4', text: 'drab-skinny-twilight', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#96af30', text: 'appalling-curved-traffic', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#eae56f', text: 'appalling-tasteless-window', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#89f26e', text: 'alive-moldy-alarm', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#c100be', text: 'better-bad-pager', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#7de6ef', text: 'numerous-melted-printer', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#dc89f3', text: 'happy-black-leather', id: Math.floor(Math.random() * Date.now()) },
+            { fillStyle: '#96af30', text: 'plain-purring-holiday', id: Math.floor(Math.random() * Date.now()) },
         ],
     'animation':           // Specify the animation to use.
     {
         'type': 'spinToStop',
-        'duration': 15,
-        'spins': 8,
+        'duration': 1800,
+        'spins': 100,
         'callbackFinished': alertPrize,
     }
 });
